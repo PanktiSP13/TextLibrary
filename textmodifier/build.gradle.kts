@@ -1,3 +1,4 @@
+
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
@@ -28,20 +29,15 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+    publishing {
+        publishing {
+            singleVariant("release") {
+                withSourcesJar()
+                withJavadocJar()
+            }
+        }
+    }
 }
-
-//afterEvaluate {
-//    publishing {
-//        publications {
-//            release(MavenPublication) {
-//                from components.release
-//                        groupId = '<<group id>>'
-//                artifactId = '<<artifact id>>'
-//                version = '<<version>>'
-//            }
-//        }
-//    }
-//}
 
 dependencies {
     implementation(libs.androidx.core.ktx)
@@ -51,3 +47,17 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
+
+//publishing {
+//    publications {
+//        release(MavenPublication) {
+//            groupId ="com.github.PanktiSP13"
+//            artifactId = "TextLibrary"
+//            version = "1.0.0"
+//
+//            afterEvaluate {
+//                from components.release
+//            }
+//        }
+//    }
+//}
