@@ -54,7 +54,7 @@ publishing {
 
             groupId = "com.github.PanktiSP13"
             artifactId = "TextLibrary"
-            version = "1.0.0"
+            version = "1.0.3"
         }
     }
 }
