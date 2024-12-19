@@ -20,7 +20,8 @@ androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
-text-modifier = {group = "com.github.PanktiSP13",name="text-library",version.ref="textModifier"}
+text-modifier = {group = "com.github.PanktiSP13",name="TextLibrary",version.ref="textModifier"}
+
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
