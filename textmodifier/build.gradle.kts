@@ -52,7 +52,7 @@ dependencies {
 //    publications {
 //        release(MavenPublication) {
 //            groupId ="com.github.PanktiSP13"
-//            artifactId = "TextLibrary"
+//            artifactId = "text-library"
 //            version = "1.0.0"
 //
 //            afterEvaluate {
