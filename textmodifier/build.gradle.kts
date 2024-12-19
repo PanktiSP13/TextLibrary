@@ -29,14 +29,6 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
-    publishing {
-        publishing {
-            singleVariant("release") {
-                withSourcesJar()
-                withJavadocJar()
-            }
-        }
-    }
 }
 
 dependencies {
@@ -48,16 +40,17 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 }
 
-//publishing {
-//    publications {
-//        release(MavenPublication) {
-//            groupId ="com.github.PanktiSP13"
-//            artifactId = "TextLibrary"
-//            version = "1.0.0"
-//
-//            afterEvaluate {
-//                from components.release
-//            }
-//        }
-//    }
-//}
+
+publishing {
+    publications {
+        create<MavenPublication>("release") {
+            afterEvaluate {
+                from(components["release"])
+            }
+
+            groupId = "com.github.PanktiSP13"
+            artifactId = "TextLibrary"
+            version = "1.0.0"
+        }
+    }
+}
