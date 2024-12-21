@@ -100,3 +100,5 @@ val styledText = textModifier.applyMultipleStyles(
 
 textView.text = styledText
 ```
+
+Check another README of creating android library here : https://github.com/PanktiSP13/TextLibrary-Publish-your-library/blob/main/CREATE_LIBRARY_README.md
