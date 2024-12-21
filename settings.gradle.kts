@@ -28,4 +28,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "TextLibraryDemo"
 include(":app")
-include(":textmodifier")
